@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 18px;
+    font-family:Mouse Memoirs, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+/* ini adalah header */
+
+.header {
+    display: grid;
+    grid-template-areas:
+        'hero hero feature-1'
+        'hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 300px;
+    background-image: url(assets/panda1.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero > * {
+    display: none;
+}
+
+.features {
+    background-color: black;
+    color: white;
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(assets/panda.png);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(assets/panda1.png);
+    background-size: cover;
+}
+
+.features .price {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+/* ====== */
+
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    /* background-color: orangered; */
+}
+
+.menu .brand {
+    font-size: 1,3em;
+    color: grey;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+
+.menu a {
+    display: block;
+    /* background-color: black; */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* ============= */
+
+h4 {
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-shadow:1px 2px 8px black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color:black;
+}
+
+image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;              
+    margin-left: 580px;
+}
+
+.css3 {
+    height: 100px;
+    width: 100px;
+    border-radius:10px;
+    box-shadow: 5px 5px 10px black;
+    transition: 3s;       
+  }
+
+.css3:hover {
+    width: 200px;
+    height: 200px;
+  }
+
+body {
+    background-color:none;
+    background-image: url(./assets/bg.webp);
+    background-repeat: y;    
+}
+

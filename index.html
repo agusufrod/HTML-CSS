@@ -4,64 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>HTML DASAR</title>
+    
 </head>
+
 <body>
 
-    <h1> My Fortopolio</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Herman Agus Syahputra</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <br>
+    <h1 class="h1">My Fortopolio</h1>
+    <div>
+        <img class="css3" src="assets/panda.png" style="display:block; margin:auto;" >
+        <!--<img src="assets/background.jpg" style="background-size: cover">-->
+    </div>
+    
     <hr>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+            <h2 class="heading">WPU Merch Shop</h2>
+            <p class="sub-heading">Hoodie $ T-Shirt</p>
+        </div>
+        <div class="features feature-1">
+            <h4 class="price">IDR 250K</h4>
+            <P class="item">Hoodie</P>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">IDR 150K</h4>
+          <p class="item">T-Shirt</p>
+        </div>
+      </header>
+
     <h4>Biografi</h4>
-    <p>hallo,, perkenalkan nama saya herman agus syahpura, saya sangat berkeingin manjadi fullstack devloper   maka saya harus giat dan gigih dalam belajar</p>
-    <h4>Skills</h4>
+    <p>Hallo,, perkenalkan nama saya herman agus syahpura, saya berasal dari pekanbaru dan saya sangat  berkeingin manjadi fullstack developer maka saya harus giat dan gigih dalam belajar</p>
+    <h4>Alumni</h4>
         <ul>
-            <li>PHP</li>
-            <li>Javascript</li>
-            <li>Golang</li>
-            <li>Python</li>
-            <li>My SQL</li>
-            <li>Mango DB</li>
+            <li>SDN 032</li>
+            <li>MTs Al-Ansor</li>
+            <li>MA Al-Ansor</li>
         </ul>
-    <H4>Other Skills</H4>
+    <H4>Hobby</H4>
         <ol>
-            <li>Laravel</li>
-            <li>React JS</li>
-            <li>Node Ekspress JS </li>
-            <li>Machine Learning</li>
+            <li>Travelling</li>
+            <li>Membaca</li>
+            <li>Berenang</li>
         </ol>
-    <!--<a href="www.youtube.com" target="_blank">agus</a>-->
-    <h4>My Close Friends</h4>
-    <table border="1px" cellspacing="0" cellpadding="3">
-        <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Alamat</th>
-        </tr>
-        <tr>
-             <td>1</td>
-             <td>agus ufrod</td>
-             <td>pekanbaru</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>herman agus</td>
-            <td>medan</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>agus syahputra</td>
-            <td>aceh</td>
-        </tr>
-    </table>
-            
+    
+    <h4 id="project">My Friends</h4>
+    
+        <table class="table">
+           <thead class="table-primary">
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Alamat</th>
+              </tr>
+           </thead>
+           <tbody>
+              <tr>
+                <td scop="col">1</td>
+                <td scop="col">agus ufrod</td>
+                <td scop="col">pekanbaru</td>
+              </tr>
+
+              <tr>
+                <td scop="col">2</td>
+                <td scop="col">Herman Agus </td>
+                <td scop="col">pekanbaru</td>
+              </tr>
+
+              <tr>
+                <td scop="col">3</td>
+                <td scop="col">Nobita</td>
+                <td scop="col">pekanbaru</td>
+              </tr>
+           </tbody>
+
+           </table>
+          
                 <br>
-    <h4>Contact Me</h4>
-     <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <button type="submit">submit</button>
-     </form>
+    <section>           
+    <h4 id="contact">Contact Me</h4>
+     <div>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="contact">Last name:</label>
+        <input type="text" id="contact" name="contact"><br><br>
+        <button type="submit" >submit</button>
+     </div>
+    </section> 
+
+
+
+     <hr>
+     <address style="text-align: center;">Author Herman Agus Syahputra
+        Visit us at : <br>
+        coba.com <br>
+        +62880066744 <br>
+        panam, pekanbaru <br>
+        Indonesia
+        </address>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
